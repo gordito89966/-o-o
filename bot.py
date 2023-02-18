@@ -98,11 +98,13 @@ async def helpstr(message: types.Message):
     keyboard_markup.row(btns)
     FIRST = message.from_user.first_name
     MSG = f'''
-BIENVEIDOS A {FIRST}, Im {BOT_NAME}
+BIENVEIDOS 
 
-Cmds /chk /info /bin'''
-    await message.answer(MSG, reply_markup=keyboard_markup,
-                        disable_web_page_preview=True)
+Cmds 
+/chk 
+/info 
+/bin
+   
 
 
 @dp.message_handler(commands=['info', 'id'], commands_prefix=PREFIX)
